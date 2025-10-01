@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OnTop - Marketing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar" role="banner">
+    <div class="logo" aria-hidden="false">
+      <div class="logo-icon">i</div>
+      <div>
+        <span class="logo-text">luck</span>
+        <span class="logo-agencia">agência</span>
+      </div>
+    </div>
+
+    <!-- Desktop Navigation Menu -->
+    <nav class="menu" role="navigation" aria-label="Menu principal">
+      <a href="./Pages/servicos.html" class="dropdown-toggle">Nossos Serviços </a>
+      <a href="./Pages/quem-somos.html">Quem Somos</a>
+      <a href="#">Blog</a>
+      <a href="#" class="dropdown-toggle">Contato </a>
+    </nav>
+
+    <!-- CTA Button for Desktop -->
+    <a href="https://wa.me/5541999545174" target="_blank" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Fale Conosco
+    </a>
+
+    <!-- Mobile Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="1" width="18" height="2" rx="1" fill="white" opacity="0.9"/>
+        <rect y="6" width="18" height="2" rx="1" fill="white" opacity="0.7"/>
+        <rect y="11" width="18" height="2" rx="1" fill="white" opacity="0.5"/>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Side menu for mobile -->
+  <div class="side-menu" id="sideMenu" aria-hidden="true">
+    <div class="backdrop" id="menuBackdrop"></div>
+    <nav class="panel" role="navigation" aria-label="Menu principal">
+      <div class="side-close" id="sideClose" aria-label="Fechar menu">✕</div>
+      <h3>Menu</h3>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="./Pages/servicos.html">Nossos Serviços ▾</a></li>
+        <li><a href="./Pages/quem-somos.html">Quem Somos</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contato ▾</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="badge"> Agência de Marketing Digital em Curitiba</div>
+      <h1><span class="accent">OnTop</span></h1>
+      <p>Pare de ver Marketing como <span class="Icent">Custo</span>. Comece a enxergar como o que ele é: O <span class="Icent">motor de crescimento</span> da sua <span class="Icent">Empresa</span></p>
+      <a class="cta" href="https://wa.me/55419966749865" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="margin-left:-4px">
+          <path d="M21.7 2.3C19.6.2 16.9-.4 14.3.2 9.6 1.3 6 5 5 9.6c-.6 2.6.1 5.3 2.2 7.4l-.9 3.4 3.4-.9c2.1 1.3 4.8 1.6 7.1.6 4-1.7 6.7-6.1 5.6-10.7C22.1 6.8 22 4.1 21.7 2.3Z" fill="white" opacity="0.06"></path>
+        </svg>
+        Quero performar meu negócio!
+      </a>
+    </section>
+
+    <!-- Cases -->
+    <section class="section">
+      <div class="cases-wrap">
+        <h2>CASES DE SUCESSO</h2>
+        <div class="carousel" id="carousel">
+          <article class="slide" role="article" aria-label="Case 1">
+            <div style="max-width:220px">
+              <h3 style="margin:0 0 12px;color:white">Eles conseguiram colocar a gente em outro patamar</h3>
+              <p style="margin:0;color:var(--muted)">+ Relacionamento, tráfego pago, número de leads e posicionamento</p>
+            </div>
+            <div class="meta">Lucas Golin — Brains</div>
+          </article>
+
+          <article class="slide" role="article" aria-label="Case 2">
+            <div style="max-width:220px">
+              <h3 style="margin:0 0 12px;color:white">Aumentamos 3x o ticket médio</h3>
+              <p style="margin:0;color:var(--muted)">Campanhas de conversão, funil e otimização de anúncios</p>
+            </div>
+            <div class="meta">Cliente X — E-commerce</div>
+          </article>
+
+          <article class="slide" role="article" aria-label="Case 3">
+            <div style="max-width:220px">
+              <h3 style="margin:0 0 12px;color:white">Posicionamento local eficiente</h3>
+              <p style="margin:0;color:var(--muted)">SEO local, Google Meu Negócio e anúncios segmentados</p>
+            </div>
+            <div class="meta">Cliente Y — Loja física</div>
+          </article>
+        </div>
+
+        <div class="carousel-controls" aria-hidden="true">
+          <div class="ctrl-btn" id="prev" title="Anterior">‹</div>
+          <div class="ctrl-btn" id="next" title="Próximo">›</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Slider Section -->
+    <section class="brands-section">
+      <div class="brands-slider">
+        <div class="brands-track">
+          <!-- First set of logos -->
+          <div class="brand-item"><img src="./imagens/logo_1_1.png" alt="Group Legacy"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_2.png" alt="ATM Viagens"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_3.png" alt="VFLY"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_4.png" alt="Silcontábil"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_5.png" alt="PZ Planeta"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_6.png" alt="Athos Contabilidade"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_1.png" alt="IdealFix"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_2.png" alt="AM Agência"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_3.png" alt="P.I.E.R"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_4.png" alt="JPC Contabilidade"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_5.png" alt="Champagnat Contabilidade"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_6.png" alt="Logo F"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_1.png" alt="Finance"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_2.png" alt="Gatubeer"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_3.png" alt="Corelab"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_4.png" alt="Notta10"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_5.png" alt="Fixar Industrial"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_6.png" alt="A&C Assessoria"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_1.png" alt="Vial & Costa"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_2.png" alt="Ajir Gráfica"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_3.png" alt="Alta Performance"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_4.png" alt="SennaCont"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_5.png" alt="Alliance"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_6.png" alt="CCB Gestão"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_1.png" alt="Move"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_2.png" alt="Veri"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_3.png" alt="Contadores SA"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_4.png" alt="GL Inteligência Contábil"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_5.png" alt="Sigmativa"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_6.png" alt="X9 Tech"></div>
+          
+          <!-- Duplicate set for infinite effect -->
+          <div class="brand-item"><img src="./imagens/logo_1_1.png" alt="Group Legacy"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_2.png" alt="ATM Viagens"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_3.png" alt="VFLY"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_4.png" alt="Silcontábil"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_5.png" alt="PZ Planeta"></div>
+          <div class="brand-item"><img src="./imagens/logo_1_6.png" alt="Athos Contabilidade"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_1.png" alt="IdealFix"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_2.png" alt="AM Agência"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_3.png" alt="P.I.E.R"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_4.png" alt="JPC Contabilidade"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_5.png" alt="Champagnat Contabilidade"></div>
+          <div class="brand-item"><img src="./imagens/logo_2_6.png" alt="Logo F"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_1.png" alt="Finance"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_2.png" alt="Gatubeer"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_3.png" alt="Corelab"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_4.png" alt="Notta10"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_5.png" alt="Fixar Industrial"></div>
+          <div class="brand-item"><img src="./imagens/logo_3_6.png" alt="A&C Assessoria"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_1.png" alt="Vial & Costa"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_2.png" alt="Ajir Gráfica"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_3.png" alt="Alta Performance"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_4.png" alt="SennaCont"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_5.png" alt="Alliance"></div>
+          <div class="brand-item"><img src="./imagens/logo_4_6.png" alt="CCB Gestão"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_1.png" alt="Move"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_2.png" alt="Veri"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_3.png" alt="Contadores SA"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_4.png" alt="GL Inteligência Contábil"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_5.png" alt="Sigmativa"></div>
+          <div class="brand-item"><img src="./imagens/logo_5_6.png" alt="X9 Tech"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom CTA + WhatsApp -->
+  <a class="bottom-cta hidden" id="bottomCta" href="https://wa.me/55419966749865" target="_blank" rel="noopener">Quero ser um case da iLuck</a>
+  
+  <!-- WhatsApp Float - Unified with services page -->
+  <a href="https://wa.me/5541992143478?text=Olá! Gostaria de saber mais sobre os serviços da K.A.D.A. Systems." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+    
+
+  <script defer src="index.js"></script>
+</body>
+</html>
